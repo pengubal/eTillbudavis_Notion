@@ -1,0 +1,7 @@
+services:
+  etilbudsavis-notion:
+    build: .
+    container_name: etilbudsavis-notion
+    restart: unless-stopped
+    env_file:
+      - .env
