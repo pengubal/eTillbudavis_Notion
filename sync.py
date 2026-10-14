@@ -62,24 +62,16 @@ log = logging.getLogger("etilbudsavis-notion")
 # Config
 # --------------------------------------------------------------------------
 
-# NOTION_TOKEN = os.environ["NOTION_TOKEN"]
-# NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
-# NOTION_NAME_PROPERTY = os.environ.get("NOTION_NAME_PROPERTY", "Name")
-
-NOTION_TOKEN="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"
-NOTION_DATABASE_ID="3db8d59fe8068059ba06f10868d6a1f6"
-NOTION_NAME_PROPERTY="Name"
+NOTION_TOKEN = os.environ["NOTION_TOKEN"]
+NOTION_DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
+NOTION_NAME_PROPERTY = os.environ.get("NOTION_NAME_PROPERTY", "Name")
 
 NOTION_VERSION = "2022-06-28"
 NOTION_API_BASE = "https://api.notion.com/v1"
 
-# TJEK_LAT = float(os.environ.get("TJEK_LAT", "55.6761"))
-# TJEK_LNG = float(os.environ.get("TJEK_LNG", "12.5683"))
-# TJEK_RADIUS_M = int(os.environ.get("TJEK_RADIUS_M", "25000"))
-
-TJEK_LAT=55.6761
-TJEK_LNG=12.5683
-TJEK_RADIUS_M=1000
+TJEK_LAT = float(os.environ.get("TJEK_LAT", "55.6761"))
+TJEK_LNG = float(os.environ.get("TJEK_LNG", "12.5683"))
+TJEK_RADIUS_M = int(os.environ.get("TJEK_RADIUS_M", "25000"))
 
 TJEK_STORES = {
     s.strip().lower() for s in os.environ.get("TJEK_STORES", "").split(",") if s.strip()
